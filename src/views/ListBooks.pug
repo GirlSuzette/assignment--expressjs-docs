@@ -1,0 +1,24 @@
+html
+  head
+    title About me
+    link(rel="stylesheet", href="/static/css/app.css")
+  body
+     div.container
+      div.column1
+        p Documentation from REST API.
+        ul
+        li
+        a( href ='/' ) GET /Menú
+        li
+        a( href ='/docs/books/list' ) GET /Books
+        li
+        a( href ='/docs/books/item' ) GET /books/:id
+        li
+        a( href ='/docs/products/list' ) GET /products
+        li
+        a( href ='/docs/products/list' ) GET /products/:id
+      div.column2
+         h1= projectTitle
+      div.column3
+         p JSONProduct
+         p= JSON.stringify(listBooks.data)

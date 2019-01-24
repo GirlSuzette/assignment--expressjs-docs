@@ -16,9 +16,14 @@ html
         li
         a( href ='/docs/products/list' ) GET /products
         li
-        a( href ='/docs/products/list' ) GET /products/:id
+        a( href ='/docs/products/item' ) GET /products/:id
       div.column2
          h1= projectTitle
+         P My Own Fancy Project Products IDs
+         p You need to specify ID fields with certain API method calls. There is of ID used within My Own Fancy Project Products:
+         p You can see the data contained in the products as "Id", "Name", "owner", the stock of "Products"
+         div.apiAll https://api.myownfancyproject.com/docs/products/{id}
       div.column3
-         p= JSONProduct
-         p= JSON.stringify(product.data)
+         div.ColBks
+           p.textCente JSONProductId
+           p= JSON.stringify(product.data)

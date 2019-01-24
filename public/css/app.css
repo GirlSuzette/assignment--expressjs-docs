@@ -24,7 +24,7 @@ body {
 }
 .container{
   display: flex;
-  /* height: 800px; */
+  height: 600px;
 }
 .column1{
   width: 20%;
@@ -37,12 +37,78 @@ body {
 .column2{
   width: 35%;
   background-color: #fcfcf9;
+  padding: 10px;
+  margin: 0 auto;
 }
+
+.col2{
+  text-align: center;
+  width: 78%;
+  margin: 0 auto;
+}
+
 .column3{
   width: 45%;
   background-color: #2C3134;
-  color: #e0e0e0
+  color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
 }
+
+.ColBks3{
+  width: 45%;
+  background-color: #2C3134;
+  color: #e0e0e0;
+  display: flex;
+  align-items: center
+}
+
+.ColBks{
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+
+.bold{
+  font-weight: bold;
+  font-size: 24px;
+}
+.textCenter{
+  align-items: center
+}
+
+.c3{
+  width: 45%;
+  background-color: #2C3134;
+  color: #e0e0e0;
+  display: flex;
+  align-items: center
+}
+
+.Col3{
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+.api{
+  background-color: black;
+  color: #e0e0e0;
+  padding: 10px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.apiAll{
+    background-color: black;
+    font-size: 15px;
+    color: #e0e0e0;
+    padding: 10px;
+    width: 70%;
+    margin: 0 auto;
+}
+
 h1{
   margin: 20px 10px 40px 10px;
   text-shadow: 4px 2px 5px #e0e0e0;
@@ -56,6 +122,9 @@ a{
   color: #161616;
   border: 1px solid cyan;
   margin-bottom: 30px
+}
+a:hover {
+  background-color: gold;
 }
 li.res{
   color: white;

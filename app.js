@@ -20,6 +20,8 @@ const listProduct = require("./listProduct.json")
 const product = require("./product.json")
 
 
+
+
 app.get("/", (request, response) => {
   response.render("main", {
     projectTitle: "GET /books"
@@ -47,7 +49,7 @@ app.get("/docs/products/list", (request, response) => {
   });
 });
 
-app.get("/docs/products/list", (request, response) => {
+app.get("/docs/products/item", (request, response) => {
   response.render("product", {
     projectTitle: "GET /products/:id",
     product

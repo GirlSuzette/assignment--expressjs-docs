@@ -16,17 +16,16 @@ html
         li
         a( href ='/docs/products/list' ) GET /products
         li
-        a( href ='/docs/products/list' ) GET /products/:id
+        a( href ='/docs/products/item' ) GET /products/:id
       div.column2
         h1= projectTitle
-         p Here's the OAuth 2.0 scope information for the Books API:
-         p https://www.googleapis.com/auth/books
-         p To request access using OAuth 2.0, your application needs the scope information, 
-         p as well as information that Google supplies when you register your application 
-         p (such as the client ID and the client secret).
-         p Tip: The Google APIs client libraries can handle some of the authorization process
-         p for you. They are available for a variety of programming languages; check the page 
-         p with libraries and samples for more details.
+         p API ENDPOINTS
+         p Below described the REST endpoint available that you can use to search for books
+         P My Own Fancy Project Books IDs
+         p You need to specify ID fields with certain API method calls. There is of ID used within My Own Fancy Project Books:
+         p You can see the data contained in the book as "Name", "Author", the stock of "Books"
+         div.apiAll https://api.myownfancyproject.com/docs/books/{id}
       div.column3
-        p Heyy
-        p= JSON.stringify(item.data)
+         div.ColBks
+           p.textCente JSONBooksId
+           p= JSON.stringify(item.data)

@@ -16,10 +16,13 @@ html
         li
         a( href ='/docs/products/list' ) GET /products
         li
-        a( href ='/docs/products/list' ) GET /products/:id
+        a( href ='/docs/products/item' ) GET /products/:id
       div.column2
          h2= projectTitle
-         p Documentation from REST API.
+         p API ENDPOINTS
+         p Below described the REST endpoint available that you can use to search for Products
+         div.apiAll https://api.myownfancyproject.com/docs/products/list
       div.column3
-         p List Product 
-         p= JSON.stringify(listProduct.data)
+         div.ColBks
+           p.textCente JSONProduct
+           p= JSON.stringify(listProduct.data)

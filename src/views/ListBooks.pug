@@ -16,9 +16,14 @@ html
         li
         a( href ='/docs/products/list' ) GET /products
         li
-        a( href ='/docs/products/list' ) GET /products/:id
+        a( href ='/docs/products/item' ) GET /products/:id
       div.column2
          h1= projectTitle
-      div.column3
-         p JSONProduct
-         p= JSON.stringify(listBooks.data)
+         p API ENDPOINTS
+         p Below described the REST endpoint available that you can use to search for Books
+         div.apiAll https://api.myownfancyproject.com/docs/products/list
+      div.ColBks3
+        div.ColBks
+          p.textCente JSONBooks
+          p= JSON.stringify(listBooks.data)
+          

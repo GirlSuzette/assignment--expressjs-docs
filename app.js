@@ -3,7 +3,7 @@ const express = require("express");
 const logger = require("morgan");
 require('dotenv').config();
 const PORT = process.env.PORT || 3000;
-
+const json = require('./public/css/data')
 
 
 const app = express();
@@ -14,12 +14,6 @@ app.set("views", "./src/views");
 app.set("view engine", "pug");
 
 app.use("/static", express.static("./public"));
-const listBooks = require("./listBooks.json")
-const item = require("./item.json")
-const listProduct = require("./listProduct.json")
-const product = require("./product.json")
-
-
 
 
 app.get("/", (request, response) => {
@@ -31,28 +25,28 @@ app.get("/", (request, response) => {
 app.get("/docs/books/list", (request, response) => {
   response.render("ListBooks", {
     projectTitle: "GET /books",
-    listBooks
+    listBooks: json.listBooks
   });
 });
 
 app.get("/docs/books/item", (request, response) => {
   response.render("item", {
     projectTitle: "GET /books/:id",
-    item
+    item: json.item
   });
 });
 
 app.get("/docs/products/list", (request, response) => {
   response.render("listProduct", {
     projectTitle: "GET /products",
-    listProduct
+    products: json.products
   });
 });
 
 app.get("/docs/products/item", (request, response) => {
   response.render("product", {
     projectTitle: "GET /products/:id",
-    product
+    product: json.product
   });
 });
 

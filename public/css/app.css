@@ -10,7 +10,7 @@ body {
 .center {
   width: 600px;
   margin: 0 auto;
-list-style: none;
+  list-style: none;
 }
 
 body {
@@ -24,7 +24,7 @@ body {
 }
 .container{
   display: flex;
-  height: 600px;
+  height: 800px;
 }
 .column1{
   width: 20%;
@@ -66,8 +66,8 @@ body {
 
 .ColBks{
   text-align: center;
-  width: 70%;
-  margin: 0 auto;
+  width: 95%;
+  font-size: 12px;
 }
 
 
